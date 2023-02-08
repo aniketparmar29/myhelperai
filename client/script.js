@@ -70,7 +70,7 @@ const handleSubmit = async (e) => {
   console.log(data.get('prompt'))
   const messageDiv = document.getElementById(uniqueId);
   loader(messageDiv);
-  const response = await fetch("https://mychatgtp.onrender.com/",{
+  const response = await fetch("https://myapiji.onrender.com",{
     method:'POST',
     headers:{
       'Content-Type':'application/json'
