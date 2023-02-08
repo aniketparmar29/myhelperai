@@ -137,12 +137,7 @@ textarea {
   outline: none;
 }
 
-button {
-  outline: 0;
-  border: 0;
-  cursor: pointer;
-  background: transparent;
-}
+
 
 form img {
   width: 30px;
