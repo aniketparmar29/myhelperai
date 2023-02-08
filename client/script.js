@@ -67,7 +67,6 @@ const handleSubmit = async (e) => {
   chatContainer.innerHTML += chatStripe(true, " ", uniqueId);
 
   chatContainer.scrollTop = chatContainer.scrollHeight;
-  console.log(data.get('prompt'))
   const messageDiv = document.getElementById(uniqueId);
   loader(messageDiv);
   const response = await fetch("https://myapiji.onrender.com",{
@@ -86,7 +85,6 @@ const handleSubmit = async (e) => {
   if(response.ok){
     const data = await response.json();
     const parsedata = data.bot.trim();
-    console.log(parsedata)
     typetext(messageDiv,parsedata);
   }else{
     const err =await response.text();
